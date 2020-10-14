@@ -25,6 +25,8 @@ module CorePro
     attr_accessor :closedDate
     attr_accessor :isPrimary
     attr_accessor :isCloseable
+    attr_accessor :isLocked
+    attr_accessor :lockReasonTypeCode
     attr_accessor :lastModifiedDate
 
     # goal related
