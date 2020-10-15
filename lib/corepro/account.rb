@@ -17,6 +17,13 @@ module CorePro
     attr_accessor :accountNumberMasked
     attr_accessor :legalName1
     attr_accessor :legalName2
+    attr_accessor :externalProgramTag
+    attr_accessor :interestTransferFkId
+    attr_accessor :productId
+
+    # link related
+    attr_accessor :sourceLinks
+    attr_accessor :targetLinks
 
     # state related
     attr_accessor :status
@@ -28,6 +35,7 @@ module CorePro
     attr_accessor :isLocked
     attr_accessor :lockReasonTypeCode
     attr_accessor :lastModifiedDate
+    attr_accessor :globalAccountAccessEnabled
 
     # goal related
     attr_accessor :targetAmount
@@ -36,12 +44,14 @@ module CorePro
     attr_accessor :targetMetPercent
     attr_accessor :category
     attr_accessor :subCategory
+    attr_accessor :maturityTypeCode
 
     # balance related
     attr_accessor :availableBalance
     attr_accessor :accountBalance
     attr_accessor :pendingBalance
     attr_accessor :balanceLastModifiedDate
+    attr_accessor :regDWithdrawalCount
 
     # recurring deposit related
     attr_accessor :recurringContributionType
